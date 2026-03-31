@@ -1,0 +1,64 @@
+name: Update README images
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 3 * * *"  # 例：毎日 03:00 UTC（負荷を抑えたいなら週1にも変更OK）
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/images.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      # --- GitHub Readme Stats: stats.svg ---
+      - name: Generate stats card
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: stats
+          options: >
+            username=${{ github.repository_owner }}
+            &show_icons=true
+            &theme=vue-dark
+          path: images/stats.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      # --- GitHub Readme Stats: top-langs.svg ---
+      - name: Generate top langs card
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: top-langs
+          options: >
+            username=${{ github.repository_owner }}
+            &layout=compact
+            &theme=vue-dark
+          path: images/top-langs.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      # --- GitHub Profile Trophy: trophy.svg ---
+      - name: Generate trophy
+        uses: Erik-Donath/github-profile-trophy@feature/generate-svg
+        with:
+          username: ${{ github.repository_owner }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+          file: images/trophy.svg
+          theme: discord
+          max-rows: 1
+
+      # --- Commit generated images back to repo ---
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add images/*.svg
+          git diff --cached --quiet || git commit -m "chore: update README cards"
+          git push
