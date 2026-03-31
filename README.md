@@ -2,11 +2,11 @@
 ### 31 years old 
 ### Feel free to contact me anytime!👍
 #
-![Foo_name's GitHub stats](https://github-readme-stats.vercel.app/api?username=kokiuchida&show_icons=true&theme=vue-dark)
+![GitHub stats](./images/stats.svg)  
+![Top Langs](./images/top-langs.svg)
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=kokiuchida&layout=compact&theme=vue-dark)](https://github.com/kokiuchida/github-readme-stats)
 
-[![trophy](https://github-profile-trophy.vercel.app/?username=kokiuchida&theme=discord)](https://github.com/ryo-ma/github-profile-trophy)
+![trophy](https://github-profile-trophy.vercel.app/?username=kokiuchida&theme=discord)
 
 [![My Twitter Followers](https://badgen.net/twitter/follow/Masa36940064)](https://twitter.com/Masa36940064)
 
