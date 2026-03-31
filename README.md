@@ -1,5 +1,3 @@
-### this is my special private repository
-
 #  in Japan👋(before civil enginieer)
 ### 31 years old 
 ### Feel free to contact me anytime!👍
@@ -24,14 +22,14 @@
 
 # My Skill (Programming Languages, Frameworks and Tools)
 
-<img src="https://skillicons.dev/icons?i=html,css,js,typescript,firebase,react,vue,next,sqlite,mysql,github,vscode,docker,laravel,cakephp,discord,php,gutlab,jquery,aws,vite" /> <br /><br />
+<img src="https://skillicons.dev/icons?i=aws,github,vscode,mysql,python,html,css,js,typescript" /> <br /><br />
 
   ※Another skill and tools
   Codeigniter, Virtual Box, CakePHP, CircleCI and so on.
   
 # NOW TRAINING
 
-<img src="https://skillicons.dev/icons?i=react,next,typescript,mysql,laravel,docker,vscode,github" /> <br /><br />
+<img src="https://skillicons.dev/icons?i=typescript,mysql" /> <br /><br />
 
 
 <!-- --------------------------------- :) ---------------------------------- -->
