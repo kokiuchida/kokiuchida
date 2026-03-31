@@ -3,10 +3,8 @@
 ### Feel free to contact me anytime!👍
 #
 ![GitHub stats](./images/stats.svg)  
-![Top Langs](./images/top-langs.svg)
-
-
-![trophy](https://github-profile-trophy.vercel.app/?username=kokiuchida&theme=discord)
+![Top Langs](./images/top-langs.svg)  
+![trophy](./images/trophy.svg)
 
 [![My Twitter Followers](https://badgen.net/twitter/follow/Masa36940064)](https://twitter.com/Masa36940064)
 
