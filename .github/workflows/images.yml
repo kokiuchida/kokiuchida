@@ -26,9 +26,7 @@ jobs:
         with:
           card: stats
           options: >
-            username=${{ github.repository_owner }}
-            &show_icons=true
-            &theme=vue-dark
+            username=${{ github.repository_owner }}&show_icons=true&theme=vue-dark
           path: images/stats.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -38,9 +36,7 @@ jobs:
         with:
           card: top-langs
           options: >
-            username=${{ github.repository_owner }}
-            &layout=compact
-            &theme=vue-dark
+            username=${{ github.repository_owner }}&layout=compact&theme=vue-dark
           path: images/top-langs.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
